@@ -24,7 +24,7 @@ Dependências: Spring Web, H2 Database, Spring Boot DevTools, Spring Data JPA.
 
 ##3.Pacotes e classes
 
-Os pacotes e as respectivas classes em conformidade com o MVC são:
+Os pacotes e as respectivas classes são:
 
 | Pacote                          | Classe           |
 |---------------------------------|------------------|
@@ -34,7 +34,12 @@ Os pacotes e as respectivas classes em conformidade com o MVC são:
 | com.livros.estudos.service.impl | LivroServiceImpl |
 | com.livros.estudos.controller   | LivroController  |
 
-##4.
+-EstudosApplication:é a classe principal do projeto;
+-Livro:mapeia a tabela livro do banco de dados.
+-LivroRepository:extends a classe JpaRepository com os parâmetros das classes Livro e Long.
+-LivroService:interface com as assinaturas dos métodos que vão manipular os dados.
+-LivroServiceImpl:implementa os métodos da interface LivroService.
+-LivroController:classe controladora que contém os serviços que a aplicação disponibiliza.
 
 
 
